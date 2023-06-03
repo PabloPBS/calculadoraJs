@@ -120,3 +120,18 @@ teclas.forEach((btn) => {
         }
     });
 });
+
+window.addEventListener("keydown", (e) => {
+    const value = e.key
+
+    if (+value >= 0 || value === ".") {
+        calc.addDigit(value)
+    } else {
+        calc.processOperation(value)
+    }
+
+    if (value == "Enter") {
+        calc.processOperation("=")
+        calc.processEqualOperator()
+    }
+})
