@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Outfit:wght@100;400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, black, #101841) no-repeat;
+    font-family: 'Kanit', sans-serif;;
+}
+
+main {
+    position: absolute;
+    max-width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #555bff;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#monitor {
+    max-width: 600px;
+    border: 2px solid #30337A;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 10px;
+}
+
+#monitor > #atual {
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+#monitor > #historico {
+    font-size: .6em;
+}
+
+#teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    padding: 8px;
+}
+
+#teclas > button {
+    min-width: 50px;
+    min-height: 50px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #5e50fb96;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#teclas > button#op {
+    background-color: #8278f5a6;
+}
+
+#teclas > button#equals {
+    grid-column: 3 / span 2;
+    background-color: #8278f5f5;
+}
+
+#teclas > button:hover{
+    background-color: rgb(238, 238, 238);
+    transition: background-color .2s ease;
+}
