@@ -59,16 +59,12 @@ main {
     font-size: 1.1em;
 }
 
-#teclas > button#op {
-    background-color: #8278f5a6;
-}
-
 #teclas > button#equals {
     grid-column: 3 / span 2;
     background-color: #8278f5f5;
 }
 
 #teclas > button:hover{
-    background-color: rgb(238, 238, 238);
+    background-color: #30327a9d;
     transition: background-color .2s ease;
 }
