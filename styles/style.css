@@ -15,26 +15,29 @@ body {
 
 main {
     position: absolute;
-    max-width: 600px;
+    max-width: 300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid #555bff;
     border-radius: 5px;
     background-color: white;
+    word-wrap: break-word;
 }
 
 #monitor {
-    max-width: 600px;
+    max-width: 280px;
     border: 2px solid #30337A;
     padding: 10px;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 10px;
+    min-height: 35px;
 }
 
 #monitor > #atual {
     border-top: 1px solid rgba(0, 0, 0, 0.205);
+    font-size: 1.3em;
 }
 
 #monitor > #historico {
@@ -57,6 +60,10 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
+}
+
+#teclas > button.op {
+    background-color: #8278f5a6;
 }
 
 #teclas > button#equals {
